@@ -15,4 +15,8 @@ class ProductController extends Controller
     {
         return Products::take(100)->get();
     }
+    public function landing()
+    {
+        return view('welcome');
+    }
 }
