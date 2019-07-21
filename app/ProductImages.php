@@ -10,4 +10,13 @@ class ProductImages extends Model
     {
         return $this->belongsTo('App\Product');
     }
+    
+    public function getImageUrlAttribute($value)
+    {
+        if (filter_var($value, FILTER_VALIDATE_URL)) {
+            return $value;
+        } else {
+            return asset('images/' . $value);
+        }
+    }
 }
