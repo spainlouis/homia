@@ -63,7 +63,7 @@
             }
         </style>
     </head>
-    <body style="background-image:url('{{assets(\'/images/header.jpg\')}}');">
+    <body style="background-image:url('/images/header.jpg');">
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
