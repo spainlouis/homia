@@ -60,6 +60,7 @@
 
             .m-b-md {
                 margin-bottom: 30px;
+                font-weight: bold;
             }
         </style>
     </head>
